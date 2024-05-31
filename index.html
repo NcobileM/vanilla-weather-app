@@ -16,20 +16,31 @@
     <div class="vanilla-weather-app">
       <header>
         <form class="search-form">
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <h1>Welcome to my Vanilla Weather App</h1>
-        <div>
-          <p>
-            Tuesday 10:30, scattered clouds
-            <br />
-            Humidity: 68%, Wind: 0.51km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Nelspruit</h1>
+            <p class="weather-app-details">
+              Tuesday 10:30, scattered clouds
+              <br />
+              Humidity: <span>68%</span>, Wind: <span>0.51km/h</span>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌥️</div>
+            <div class="weather-app-temperature">20</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌥️ 20°C</div>
       </main>
       <footer>
         This project was coded by
